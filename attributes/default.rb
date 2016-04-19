@@ -19,7 +19,30 @@ default['vulcand']['src_command'] = 'go get github.com/vulcand/vulcand \
 
 # General run options
 default['vulcand']['run_opts']['apiInterface'] = '0.0.0.0'
+default['vulcand']['run_opts']['apiPort'] = '8182'
+default['vulcand']['run_opts']['certPath'] = nil
+default['vulcand']['run_opts']['default_listener'] = true
+default['vulcand']['run_opts']['endpointDialTimeout'] = '5s'
+default['vulcand']['run_opts']['endpointReadTimeout'] = '50s'
 default['vulcand']['run_opts']['etcd'] = 'http://localhost:4001'
+default['vulcand']['run_opts']['etcdCaFile'] = nil
+default['vulcand']['run_opts']['etcdCertFile'] = nil
+default['vulcand']['run_opts']['etcdConsistency'] = 'STRONG'
+default['vulcand']['run_opts']['etcdKey'] = 'vulcand'
+default['vulcand']['run_opts']['etcdKeyFile'] = nil
+default['vulcand']['run_opts']['etcdSyncIntervalSeconds'] = 0
+default['vulcand']['run_opts']['interface'] = nil
+default['vulcand']['run_opts']['log'] = 'console'
+default['vulcand']['run_opts']['logSeverity'] = 'warning'
+default['vulcand']['run_opts']['pidPath'] = nil
+default['vulcand']['run_opts']['port'] = '8181'
+default['vulcand']['run_opts']['readTimeout'] = '1m0s'
+default['vulcand']['run_opts']['sealKey'] = nil
+default['vulcand']['run_opts']['serverMaxHeaderBytes'] = 1048576
+default['vulcand']['run_opts']['serverReadTimeout'] = '1m0s'
+default['vulcand']['run_opts']['serverWriteTimeout'] = '1m0s'
+default['vulcand']['run_opts']['statsdAddr'] = nil
+default['vulcand']['run_opts']['statsdPrefix'] = nil
 
 # Run options for docker
 default['vulcand']['container_name'] = 'vulcand'
