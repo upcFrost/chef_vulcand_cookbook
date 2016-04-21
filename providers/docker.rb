@@ -5,8 +5,6 @@
 # Copyright 2016, Petr Belyaev <upcfrost@gmail.com>
 #
 
-default_action :start
-
 action :start do
   docker_container new_resource.container_name do
     repo new_resource.repo
