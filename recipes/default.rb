@@ -2,7 +2,7 @@
 # Cookbook Name:: vulcand
 # Recipe:: default
 #
-# Copyright 2016, YOUR_COMPANY_NAME
+# Copyright 2016, Petr Belyaev <upcfrost@gmail.com>
 #
 # All rights reserved - Do Not Redistribute
 #

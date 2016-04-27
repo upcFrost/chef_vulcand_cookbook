@@ -10,6 +10,7 @@ default['vulcand']['vulcand_docker_tag'] = 'v0.8.0-beta.2'
 default['vulcand']['golang_docker_repo'] = 'golang'
 default['vulcand']['golang_docker_tag'] = 'latest'
 default['vulcand']['bin_path'] = '/usr/local/bin'
+default['vulcand']['conf_dir'] = '/etc/vulcand'
 default['vulcand']['install_method'] = 'source_docker'
 
 # Source compile command

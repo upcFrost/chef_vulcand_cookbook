@@ -14,6 +14,9 @@ attribute :container_name, String,               default: node['vulcand']['conta
 attribute :container_port, [String, Array],      default: node['vulcand']['container_port']
 attribute :network_mode, String,                 default: node['vulcand']['network_mode']
 attribute :vulcand_docker_bin, String,           default: node['vulcand']['vulcand_docker_bin']
+# Install options
+attribute :bin_path, String,                     default: node['vulcand']['bin_path']
+attribute :conf_dir, String,                     default: node['vulcand']['conf_dir']
 # General options
 attribute :apiInterface, kind_of: String,        default: node['vulcand']['run_opts']['apiInterface']
 attribute :apiPort, kind_of: String,             default: node['vulcand']['run_opts']['apiPort']
