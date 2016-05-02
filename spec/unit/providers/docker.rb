@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'vulcand_docker', :type => :provider do
+describe 'vulcand_docker', type: :provider do
   let :chef_run do
     ChefSpec::SoloRunner.new()
   end
