@@ -6,7 +6,7 @@ addons:
     packages:
       - chefdk
 
-install: echo "skip bundle install"
+install: bundle install
 
 before_script:
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"

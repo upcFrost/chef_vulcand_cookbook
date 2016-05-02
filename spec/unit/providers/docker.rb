@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'vulcand_docker', type: :provider do
   let :chef_run do
-    ChefSpec::SoloRunner.new()
+    ChefSpec::SoloRunner.new
   end
 
   it 'should start a container on the start action' do
