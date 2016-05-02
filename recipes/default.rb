@@ -10,7 +10,7 @@
 case node['vulcand']['install_method']
   when 'docker'
     # Pull the vulcand image from Docker Hub
-    docker_image 'vulcand' do
+    docker_image node['vulcand']['vulcand_docker_repo'] do
       repo node['vulcand']['vulcand_docker_repo']
       tag node['vulcand']['vulcand_docker_tag']
       action :pull
@@ -18,7 +18,7 @@ case node['vulcand']['install_method']
   when 'source_docker'
     # Pull the golang image from Docker Hub
     # Useful for LTS distros with very old golang package
-    docker_image 'golang' do
+    docker_image node['vulcand']['golang_docker_repo'] do
       repo node['vulcand']['golang_docker_repo']
       tag node['vulcand']['golang_docker_tag']
       action :pull
@@ -36,7 +36,7 @@ case node['vulcand']['install_method']
     # Install golang and build from source
     include_recipe 'golang::defaut'
     execute 'Compile vulcand' do
-      environment {'GOPATH' => '$GOPATH:/tmp', 'GOBIN' => node['vulcand']['bin_path']}
+      environment 'GOPATH' => '$GOPATH:/tmp', 'GOBIN' => node['vulcand']['bin_path']
       command node['vulcand']['src_command']
     end
 end

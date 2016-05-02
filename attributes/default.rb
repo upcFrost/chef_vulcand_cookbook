@@ -20,7 +20,7 @@ default['vulcand']['src_command'] = 'go get github.com/vulcand/vulcand \
 
 # General run options
 default['vulcand']['run_opts']['apiInterface'] = '0.0.0.0'
-default['vulcand']['run_opts']['apiPort'] = '8182'
+default['vulcand']['run_opts']['apiPort'] = 8182
 default['vulcand']['run_opts']['certPath'] = nil
 default['vulcand']['run_opts']['default_listener'] = true
 default['vulcand']['run_opts']['endpointDialTimeout'] = '5s'
@@ -36,7 +36,7 @@ default['vulcand']['run_opts']['interface'] = nil
 default['vulcand']['run_opts']['log'] = 'console'
 default['vulcand']['run_opts']['logSeverity'] = 'warning'
 default['vulcand']['run_opts']['pidPath'] = nil
-default['vulcand']['run_opts']['port'] = '8181'
+default['vulcand']['run_opts']['port'] = 8181
 default['vulcand']['run_opts']['readTimeout'] = '1m0s'
 default['vulcand']['run_opts']['sealKey'] = nil
 default['vulcand']['run_opts']['serverMaxHeaderBytes'] = 1048576
