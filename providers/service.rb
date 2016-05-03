@@ -45,7 +45,7 @@ action :create do
     mode '644'
     owner 'root'
     group 'root'
-    notifies :restart, 'service[docker-etcd-registrator]'
+    notifies :restart, 'service[vulcand]'
     variables config: new_resource
   end
 end
