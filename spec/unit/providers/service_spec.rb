@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe 'test::vulcand_service', type: :provider do
   context 'Given default parameters' do
-
     let :chef_run do
       ChefSpec::ServerRunner.new(step_into: 'vulcand_service').converge(described_recipe)
     end
