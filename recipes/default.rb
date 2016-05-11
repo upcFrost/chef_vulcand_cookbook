@@ -34,7 +34,7 @@ when 'source_docker'
   end
 when 'source'
   # Install golang and build from source
-  include_recipe 'golang::defaut'
+  include_recipe 'golang::default'
   execute 'Compile vulcand' do
     environment 'GOPATH' => '$GOPATH:/tmp', 'GOBIN' => node['vulcand']['bin_path']
     command node['vulcand']['src_command']
