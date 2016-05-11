@@ -11,7 +11,7 @@ addons:
     packages:
       - chefdk
 
-install: bundler install
+install: bundle install
 
 before_script:
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
