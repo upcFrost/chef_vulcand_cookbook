@@ -1,5 +1,5 @@
 name             'vulcand'
-maintainer       'TUT'
+maintainer       'Petr Belyaev'
 maintainer_email 'upcfrost@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures vulcand'
@@ -10,3 +10,7 @@ issues_url       'https://github.com/upcFrost/chef_vulcand_cookbook/issues'
 
 depends 'docker'
 depends 'golang'
+
+supports 'centos'
+supports 'debian'
+supports 'ubuntu'
